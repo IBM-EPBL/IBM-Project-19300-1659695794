@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    
+    <link href="static/styles.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+   
+    <!-- Vendor CSS Files -->
+    <style>
+        .layout{
+    width: 600px;
+    margin: auto;
+}
+.accordion{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(73, 155, 175);
+    border-radius: 10px;
+}
+.accordion__question p{
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+.accordion__answer p{
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background: rgb(82, 130, 170);
+    border-radius: 10px; 
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.accordion__answer {
+    display: none;
+} 
+.accordion.active .accordion__answer {
+    display: block;
+}
+    </style>
+  
+</head>
+<body bgcolor="aqua">
+    <form action="/index" method="get">
+    <h1 style="text-shadow: 3px 3px 2px #E6E8FA; 
+    border: 16px solid #737ab8;
+    box-shadow: 1px 1px 3px 2px #0d1457; background-color: #e5e6ee;"><center> WEB PHISHING DETECTOR</center></h1>
+   
+    <center>  <img class="image image-contain" src="https://www.arrc.com/wp-content/uploads/2022/10/Wk2Regular.png" alt="MDN logo" width="1500px" height="400px" /> </center>
+    <h1>
+        Free URL scanner and Website checker to detect phishing, scam sites & fraudulent sites            </h1>
+      <h3>This is a free tool to detect malicious URLs including malware, scam and phishing links.
+        <br>
+        This tool verifies whether or not a website is legit, phishing or a scam.            </h3>
+    
+    <center><input type="submit"  value="Check URL" style="height:60px;width:170px; color: #e5e6ee; background-color:rgb(245, 76, 76);" ></center>
+    
+   </form>
+   <h2 style="color:rgb(122, 122, 226); text-align:center">FAQs</h2>
+   <div class="layout">
+       <div class="accordion">
+           <div class="accordion__question">
+               <p>What is Web Phishing Detector?</p>
+ 
+           </div>
+           <div class="accordion__answer">
+               <p>Web Phishing Detector is a tool that uses advanced artificial intelligence (AI) and machine learning techniques to quickly detect scam websites and determine whether a website is legit.</p>
+ 
+           </div>
+       </div>
+       <div class="accordion">
+           <div class="accordion__question">
+               <p>What are the benefits of using Web Phishing Detector?</p>
+ 
+           </div>
+           <div class="accordion__answer">
+               <p>
+                 Often, you want to visit a website for various reasons, but you are unsure whether to trust the website. You are asking yourself questions such as “is this website legit?” or “is it a scam website?” or “is this a safe website?” or “is this site real?” and so many similar questions. Web Phishing Detector is an intelligent scam detector which analyses website link characteristics and allows finding out proactively and swiftly whether by clicking on the link you will land on an unsafe website or a website that is safe. It helps with website credibility check and verifying whether a company is legit.
+               </p>
+ 
+           </div>
+       </div>
+   <div class="accordion">
+           <div class="accordion__question">
+               <p>How to use Web Phishing Detector?</p>
+ 
+           </div>
+           <div class="accordion__answer">
+               <p>Using Web Phishing Detector for fraudulent websites check or to check whether a website is safe is very easy. Enter the Url and Just in one click, our tool displays its results as whether this is a scam website or a safe website.</p>
+ 
+           </div>
+       </div>
+    <div class="accordion">
+           <div class="accordion__question">
+               <p>How Web Phishing Detector works?</p>
+ 
+           </div>
+           <div class="accordion__answer">
+               <p>Web Phishing Detector is a safe link checker which uses advanced artificial intelligence and natural language processing techniques to analyze website link characteristics and check the credibility of the company owning it.</p>
+ 
+           </div>
+       </div>
+
+    </div>
+    
+</div>
+</div>
+<script>
+    let answers=document.querySelectorAll(".accordion");
+    answers.forEach((event)=>{
+        event.addEventListener('click',()=>{
+            if(event.classList.contains("active")){
+                event.classList.remove("active");
+            }
+            else{
+                event.classList.add("active");
+            }
+        })
+    })
+</script>
+    
+</body>
+<footer><center>
+    <p>© 2022 Noor Ul Hudah</p> 
+</center></footer>
+</html>
